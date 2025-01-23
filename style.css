@@ -3,6 +3,7 @@
     padding: 0rem;
 }
 img{
+    align-items: center;
     width: 10rem;
     height: 10rem;
 }
@@ -58,4 +59,9 @@ a{
 }
 .sidebar a {
     width: 100%;
+}
+@media (max-width:800px) {
+    .hideOnMobile{
+        display: none;
+    }
 }
