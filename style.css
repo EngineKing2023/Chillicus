@@ -1,11 +1,12 @@
 *{
+    border: solid red 2px;
     margin: 0rem;
     padding: 0rem;
 }
+
 img{
     align-items: center;
-    width: 10rem;
-    height: 10rem;
+    
 }
 
 li{
@@ -18,9 +19,34 @@ a{
     font-weight: bold;
     color: rgb(201, 195, 195);
 }
+.slideShow{
+}
+.mySlides{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 40rem;
 
+    
+}
+
+.logo{
+    
+    width: 4rem;
+    height: 4rem;
+}
+#navbar{
+    
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
 .container{
     display: flex;
+    
     justify-content: space-between;
     align-items: center;
     background-color: black;
@@ -60,7 +86,7 @@ a{
 .sidebar a {
     width: 100%;
 }
-@media (max-width:800px) {
+@media (max-width:1000px) {
     .hideOnMobile{
         display: none;
     }
