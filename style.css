@@ -1,23 +1,51 @@
 *{
-    border: solid red 2px;
+   border: solid red 2px; 
     margin: 0rem;
     padding: 0rem;
 }
 
 img{
+    margin: 0;
+    padding: 0;
     align-items: center;
     
 }
 
+.img2{
+    display: block;
+    margin: 5% 5% 5% auto;
+    width: 50%;
+}
 li{
     list-style: none;
 }
-
+p{
+    color: gray;
+    font-size: 6vw;
+    text-align: center;
+    justify-content: center;
+    font-weight: 700;
+}
 a{
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
     color: rgb(201, 195, 195);
+}
+button{
+    display: flex;
+    color: black;
+    background-color: red;
+    width: 24vw;
+    height: 6vw;
+    font-size: 3vw;
+    
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    
+
 }
 .slideShow{
 }
@@ -65,6 +93,75 @@ a{
 .header-right a:hover{
     color: red;
 }
+.chil{
+     display: flex;
+      position: absolute;
+      
+      flex-direction: column;
+      
+      justify-content:flex-start;
+      gap:1rem;
+      top: 10rem;
+      
+}
+.chili{
+    color: black;
+    
+    
+    font-size: 10vw;
+    font-weight: bold;
+}
+.chili2{
+    display: flex;
+    color: black;
+    
+    font-size: 4vw;
+}
+.section2{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(71, 4, 4);
+
+}
+.section3{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.neon-text {
+    text-align: center;
+    background-color: black;
+    font-size: 6vw;
+    color: #fff;
+    text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 5px #ff005e, 0 0 10px #ff005e, 0 0 20px #ff005e, 0 0 40px #ff005e, 0 0 80px #ff005e;
+    }
+    100% {
+        text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 40px #00d4ff, 0 0 80px #00d4ff, 0 0 160px #00d4ff;
+    }
+}
+.cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(77, 75, 75);
+    width: 100%;
+    height: 45vw;
+}
+.card{
+    width: 22vw;
+    height: 35vw;
+    background-color: black;
+    border-radius: 5vw;
+    
+}
 .sidebar{
     position: fixed;
     top: 0rem;
@@ -89,5 +186,45 @@ a{
 @media (max-width:1000px) {
     .hideOnMobile{
         display: none;
+    }
+  
+    .chil{
+margin: 25% 25% 0% 25%;
+align-items: center;
+
+    }
+    
+    .chili{
+        font-size: 6vw;
+    }
+    .img2{
+        display: block;
+    margin:  auto;
+    width: 80%;
+    }
+    .section2{
+        display: flex;
+        flex-direction:column;
+
+    
+    }
+    .cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        background-color: rgb(77, 75, 75);
+        width: 100%;
+        height: 100%;
+    }
+    .card{
+        
+        width: 80%;
+        height: 100vw;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+        background-color: black;
+        border-radius: 5vw;
+        
     }
 }
